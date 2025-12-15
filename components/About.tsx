@@ -93,7 +93,7 @@ const About: React.FC = () => {
                         <Users className="text-[#fc9320] shrink-0" size={32} />
                         <div>
                            <h4 className="text-white font-black uppercase">Community First</h4>
-                           <p className="text-gray-400 text-sm">Bonk DAO support > Random dev support.</p>
+                           <p className="text-gray-400 text-sm">Bonk DAO support &gt; Random dev support.</p>
                         </div>
                      </div>
                      <div className="bg-gray-900 p-4 rounded-xl border-l-8 border-yellow-400 flex items-center gap-4">
