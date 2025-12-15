@@ -1,6 +1,6 @@
-export const CONTRACT_ADDRESS = "xxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+export const CONTRACT_ADDRESS = "2WtT6KTSwU8vxDWHLh1U4VDDasZGcNEX3jjpErzqbonk";
 export const TWITTER_URL = "https://x.com/i/communities/2000688823081295921";
-export const BONK_FUN_URL = "https://bonk.fun"; // Fallback URL, usually specific to the token launch
+export const BONK_FUN_URL = "https://bonk.fun/token/2WtT6KTSwU8vxDWHLh1U4VDDasZGcNEX3jjpErzqbonk";
 
 export const PROMPT_CAP = `
 Edit this image. Identify the main subject (person or animal). 
