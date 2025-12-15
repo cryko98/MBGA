@@ -43,7 +43,6 @@ const Hero: React.FC = () => {
         </h1>
         
         <p className="text-2xl md:text-3xl font-bold text-white mb-10 max-w-2xl mx-auto leading-relaxed text-meme drop-shadow-lg">
-          No rugs. Just BONKS. <br/>
           <span className="text-lg md:text-xl font-medium mt-2 block opacity-90">
             Restoring meme glory on USD1.
           </span>
