@@ -16,7 +16,7 @@ const App: React.FC = () => {
             <div className="flex-shrink-0 flex items-center gap-3">
                {/* Logo */}
                <img 
-                 src="https://pbs.twimg.com/media/G8PVElSWEAIkHrY?format=jpg&name=medium" 
+                 src="https://pbs.twimg.com/media/G8PgN9UW4AMATa0?format=jpg&name=medium" 
                  alt="MBGA Logo" 
                  className="w-12 h-12 rounded-full border-2 border-black shadow-sm"
                />

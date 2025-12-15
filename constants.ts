@@ -1,5 +1,5 @@
 export const CONTRACT_ADDRESS = "xxxxxxxxxxxxxxxxxxxxxxxxxxxx";
-export const TWITTER_URL = "https://x.com";
+export const TWITTER_URL = "https://x.com/i/communities/2000688823081295921";
 export const BONK_FUN_URL = "https://bonk.fun"; // Fallback URL, usually specific to the token launch
 
 export const PROMPT_CAP = `
