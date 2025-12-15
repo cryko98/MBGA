@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Copy, Check, ArrowRight } from 'lucide-react';
-import { CONTRACT_ADDRESS, TWITTER_URL } from '../constants';
+import { Copy, Check, ShoppingCart } from 'lucide-react';
+import { CONTRACT_ADDRESS, TWITTER_URL, BONK_FUN_URL } from '../constants';
 
 const Hero: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -49,33 +49,47 @@ const Hero: React.FC = () => {
           </span>
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
-          {/* CA Box */}
-          <div className="comic-box rounded-xl p-2 w-full sm:w-auto max-w-md transform rotate-1 hover:rotate-0 transition-transform bg-white/95">
-            <div className="flex items-center gap-2">
-              <div className="bg-[#fc9320] px-4 py-2 rounded-lg font-mono text-sm font-bold text-black border-2 border-black truncate max-w-[200px] sm:max-w-xs">
-                {CONTRACT_ADDRESS}
-              </div>
-              <button
-                onClick={handleCopy}
-                className="p-2 bg-black text-white rounded-lg border-2 border-black hover:bg-gray-800 transition-colors"
-                title="Copy Address"
-              >
-                {copied ? <Check size={20} className="text-green-400" /> : <Copy size={20} />}
-              </button>
+        <div className="flex flex-col items-center justify-center gap-6 mb-12">
+          
+          {/* Main CTA */}
+          <a 
+            href={BONK_FUN_URL} 
+            target="_blank" 
+            rel="noreferrer"
+            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-[#fc9320] text-white font-black text-2xl uppercase tracking-wider border-4 border-white rounded-2xl shadow-comic-lg hover:shadow-none hover:translate-y-2 transition-all transform hover:rotate-1"
+          >
+            <ShoppingCart size={32} strokeWidth={3} />
+            Buy on BONK.fun
+            <div className="absolute -top-6 -right-6 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full border-2 border-black transform rotate-12 animate-bounce">
+              LFG! 🚀
             </div>
-          </div>
+          </a>
 
-          <div className="flex gap-4">
+          {/* CA Box & Socials */}
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <div className="comic-box rounded-xl p-2 w-full sm:w-auto max-w-md transform -rotate-1 hover:rotate-0 transition-transform bg-white/95">
+              <div className="flex items-center gap-2">
+                <div className="bg-gray-100 px-4 py-2 rounded-lg font-mono text-sm font-bold text-black border-2 border-black truncate max-w-[200px] sm:max-w-xs">
+                  {CONTRACT_ADDRESS}
+                </div>
+                <button
+                  onClick={handleCopy}
+                  className="p-2 bg-black text-white rounded-lg border-2 border-black hover:bg-gray-800 transition-colors"
+                  title="Copy Address"
+                >
+                  {copied ? <Check size={20} className="text-green-400" /> : <Copy size={20} />}
+                </button>
+              </div>
+            </div>
+
             <a 
               href={TWITTER_URL} 
               target="_blank" 
               rel="noreferrer"
-              className="p-4 bg-black text-white rounded-xl border-2 border-white hover:bg-gray-900 transition-transform hover:-translate-y-1 shadow-comic flex items-center justify-center w-16"
+              className="p-3 bg-black text-white rounded-xl border-2 border-white hover:bg-gray-900 transition-transform hover:-translate-y-1 shadow-comic flex items-center justify-center"
               aria-label="X (formerly Twitter)"
             >
-              {/* X Logo SVG */}
-              <svg viewBox="0 0 24 24" aria-hidden="true" className="w-7 h-7 fill-current">
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="w-6 h-6 fill-current">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
               </svg>
             </a>

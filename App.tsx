@@ -1,14 +1,16 @@
 import React from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
+import HowToBuy from './components/HowToBuy';
+import Chart from './components/Chart';
 import AIGenerator from './components/AIGenerator';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col bg-[#fc9320]">
       {/* Navigation Bar */}
-      <nav className="fixed w-full z-50 bg-[#fc9320]/90 backdrop-blur-md border-b-4 border-black">
+      <nav className="fixed w-full z-50 bg-[#fc9320]/95 backdrop-blur-md border-b-4 border-black shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20 items-center">
             <div className="flex-shrink-0 flex items-center gap-3">
@@ -26,19 +28,25 @@ const App: React.FC = () => {
             </div>
             
             {/* Nav Links */}
-            <div className="hidden sm:flex space-x-8 items-center">
-              <a href="#" className="text-white font-bold text-lg hover:text-black hover:scale-110 transition-all text-meme uppercase">Home</a>
-              <a href="#about" className="text-white font-bold text-lg hover:text-black hover:scale-110 transition-all text-meme uppercase">About</a>
-              <a href="#generator" className="text-white font-bold text-lg hover:text-black hover:scale-110 transition-all text-meme uppercase">Generator</a>
+            <div className="hidden md:flex space-x-6 items-center">
+              <a href="#" className="text-white font-bold text-sm lg:text-base hover:text-black hover:-translate-y-1 transition-all uppercase tracking-wide">Home</a>
+              <a href="#about" className="text-white font-bold text-sm lg:text-base hover:text-black hover:-translate-y-1 transition-all uppercase tracking-wide">About</a>
+              <a href="#generator" className="px-4 py-2 bg-black text-white font-black rounded-lg border-2 border-white hover:bg-white hover:text-black hover:border-black transition-all shadow-comic text-sm uppercase">
+                Meme Gen
+              </a>
+              <a href="#howtobuy" className="text-white font-bold text-sm lg:text-base hover:text-black hover:-translate-y-1 transition-all uppercase tracking-wide">How to Buy</a>
+              <a href="#chart" className="text-white font-bold text-sm lg:text-base hover:text-black hover:-translate-y-1 transition-all uppercase tracking-wide">Chart</a>
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Main Content */}
+      {/* Main Content Reordered */}
       <Hero />
       <About />
       <AIGenerator />
+      <HowToBuy />
+      <Chart />
       <Footer />
     </main>
   );

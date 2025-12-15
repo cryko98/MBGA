@@ -67,7 +67,7 @@ const AIGenerator: React.FC = () => {
             Meme Machine
           </h2>
           <p className="text-xl text-white font-bold drop-shadow-md">
-            Generate your official BONK.fun profile picture.
+            Generate your official $MBGA pfp.
           </p>
         </div>
 

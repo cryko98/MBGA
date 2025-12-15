@@ -1,5 +1,6 @@
 export const CONTRACT_ADDRESS = "xxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 export const TWITTER_URL = "https://x.com";
+export const BONK_FUN_URL = "https://bonk.fun"; // Fallback URL, usually specific to the token launch
 
 export const PROMPT_CAP = `
 Edit this image. Identify the main subject (person or animal). 
@@ -10,8 +11,10 @@ Ensure the cap fits naturally on the head. Maintain the original background.
 
 export const PROMPT_BONK = `
 Edit this image. Identify the main subject's head.
-Apply an EXTREMELY exaggerated "bonk" effect where the head is significantly flattened and squashed vertically, appearing wide and flat like a pancake.
-The distortion must be very obvious, comical and extreme.
-Floating just above the flattened head, add the text "*bonked*" in a bold, comic-book style font (yellow or white text with black outline).
-Keep the rest of the image unchanged.
+Apply a strong, comical "bonk" effect where the TOP of the head is visibly flattened and squashed downwards, as if struck heavily from above.
+The head shape should be distorted to look compressed vertically and expanded horizontally.
+The top surface must be flat, appearing crunched down.
+Floating immediately above the flattened area, add the text "*BONK*" in a bold, comic-book style font (yellow or orange text with thick black outline).
+Add a few small cartoon stars or dizzy lines around the head to emphasize the impact.
+Keep the rest of the body and background unchanged.
 `;
